@@ -6,11 +6,12 @@ output:
     vertical_layout: fill
 ---
 
-```{r setup, include=FALSE}
+```{r setup}
 library(flexdashboard)
 library(p8105.datasets)
 library(tidyverse)
 library(plotly)
+data("ny_noaa")
 ```
 
 Column {data-width=650}
