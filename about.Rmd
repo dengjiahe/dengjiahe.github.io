@@ -4,6 +4,35 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: readable
 ---
+Education
+
+- COLUMBIA MAILMAN SCHOOL OF PUBLIC HEALTH, Master of Science in Biostatistics
+
+- UNIVERSITY OF CALIFORNIA, SANTA BARBARA, Bachelor of Science in Applied Mathematics
+<img src = "images/ucsb.jpg" style = "width:35%">
+
+Internship
+
+
+- DA CHENG FUND MANAGEMENT CO. LTD @ Shenzhen, CN
+
+Assisted with fund issuance and distribution via major banks, conducted data analysis on client risk appetites and sales growth, created visualizations; collected placement data of competitor funds via four major banks,
+performed sales analysis, client analysis, and computed proportion of assets under bank custody
+
+- YUEYANG CENTER FOR DISEASE PREVENTION AND CONTROL @ Yueyang, CN
+
+Conducted _ield sampling and testing of iodized kitchen salt in local towns, collected electronic health records of 70000+ senior residents, built up SQL databases
+
+Investigated local chronic diseases and promoted prevention methods of iodine de_icient disorder and diabetes through informative events and brochures
+
+- BGI GENOMICS @ Shenzhen, CN
+
+Collected and cleaned sales data for products including the best-selling MGISEQ-200 gene sequencer; used Excel to conduct sales analysis, compile industry information and regulatory requirements, and analyze market preferences; created corresponding visualizations to help set sales goals
+
+- TENCENT @ Shenzhen, CN
+
+Used Python and SQL to compile the sales data of joint merchandises and analyze the popularities of multiple joint series across age groups, and perform data screening and create visual reports on relationships between age groups,
+regions, and brand names
 
