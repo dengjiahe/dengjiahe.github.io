@@ -6,7 +6,7 @@ navbar:
     - text: "About"
       href: about.html
     - text: "Dashboard"
-      herf: flexdashboard.html
+      href: dashboard.html
     - icon: fa-envelope fa-lg 
       href: mailto:<jd3924@cume.columbia.edu>
     - icon: fa-github fa-lg

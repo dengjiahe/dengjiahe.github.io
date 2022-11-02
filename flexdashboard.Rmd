@@ -1,12 +1,12 @@
 ---
-title: "flexdashboard "
+title: "dashboard "
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
 ---
 
-```{r setup}
+```{r setup, include=FALSE}
 library(flexdashboard)
 library(p8105.datasets)
 library(tidyverse)
