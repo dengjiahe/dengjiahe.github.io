@@ -6,8 +6,9 @@ output:
     toc_float: true
     theme: readable  
 ---
-# This is Janice's website.
-
+<h5>Hi !</h5>
 This is me and my favorite. His name is Kirby, a British short hair.
 ![](images/me&kirby.jpg)
-You can know more [about](about.html) me from here.
+He just became 1 year old last month!
+![](images/kirby.jpg)
+You can know more [about](about.html) me here, not Kirby!

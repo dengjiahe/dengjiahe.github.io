@@ -6,33 +6,54 @@ output:
     toc_float: true
     theme: readable
 ---
-Education
+<h4>Personal Infomation</h4>
 
-- COLUMBIA MAILMAN SCHOOL OF PUBLIC HEALTH, Master of Science in Biostatistics
+- <strong>name: Jiahe(Janice) Deng
 
-- UNIVERSITY OF CALIFORNIA, SANTA BARBARA, Bachelor of Science in Applied Mathematics
+- <strong>email: jd3924@cumc.columbia.edu
+
+- <strong>Tel: 949-572-3166
+
+
+<h3>Education</h3>
 <img src = "images/ucsb.jpg" style = "width:35%">
 
-Internship
+- <strong>COLUMBIA MAILMAN SCHOOL OF PUBLIC HEALTH</strong>, Master of Science in Biostatistics
 
+- <strong>UNIVERSITY OF CALIFORNIA, SANTA BARBARA</strong>, Bachelor of Science in Applied Mathematics
 
-- DA CHENG FUND MANAGEMENT CO. LTD @ Shenzhen, CN
+<h3>Internship</h3>
+
+- <strong>DA CHENG FUND MANAGEMENT CO. LTD</strong> @ Shenzhen, CN
+
+Intern Marketing Management
 
 Assisted with fund issuance and distribution via major banks, conducted data analysis on client risk appetites and sales growth, created visualizations; collected placement data of competitor funds via four major banks,
 performed sales analysis, client analysis, and computed proportion of assets under bank custody
 
-- YUEYANG CENTER FOR DISEASE PREVENTION AND CONTROL @ Yueyang, CN
+- <strong>YUEYANG CENTER FOR DISEASE PREVENTION AND CONTROL</strong> @ Yueyang, CN
 
-Conducted _ield sampling and testing of iodized kitchen salt in local towns, collected electronic health records of 70000+ senior residents, built up SQL databases
+Data Analyst Intern, Institute of Chronic Disease Control
 
-Investigated local chronic diseases and promoted prevention methods of iodine de_icient disorder and diabetes through informative events and brochures
+Conducted field sampling and testing of iodized kitchen salt in local towns, collected electronic health records of 70000+ senior residents, built up SQL databases. Investigated local chronic diseases and promoted prevention methods of iodine deficient disorder and diabetes through informative events and brochures
 
-- BGI GENOMICS @ Shenzhen, CN
+- <strong>BGI GENOMICS</strong> @ Shenzhen, CN
+
+Data Analyst Intern, Sales
 
 Collected and cleaned sales data for products including the best-selling MGISEQ-200 gene sequencer; used Excel to conduct sales analysis, compile industry information and regulatory requirements, and analyze market preferences; created corresponding visualizations to help set sales goals
 
-- TENCENT @ Shenzhen, CN
+- <strong>TENCENT</strong> @ Shenzhen, CN
 
-Used Python and SQL to compile the sales data of joint merchandises and analyze the popularities of multiple joint series across age groups, and perform data screening and create visual reports on relationships between age groups,
-regions, and brand names
+Intern, QQ Brand Department
+
+Used Python and SQL to compile the sales data of joint merchandises and analyze the popularities of multiple joint series across age groups, and perform data screening and create visual reports on relationships between age groups,regions, and brand names
+
+<h3>project</h3>
+- <strong>Time Series Modeling for Residentail Electricity Usage Analysis</strong>
+
+Applied Box-Cox transformation to normalize Iowa City's electricity usage data from 1971 to 1979, removed seasonality from the data by differencing at lag 12, analyzed data feature with ACF, PACF, decomposition plot, etc.
+
+Built SARIMA models to predict electricity usage, compared AIC values to choose parameters, applied tests such as Yule-Walker, Box-Pierce, and Shapiro Wilk to test for model robustness, ran out-of-sample prediction tests
+
 

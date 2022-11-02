@@ -54,7 +54,3 @@ my_data %>%
   count(id) %>%
   plot_ly(x = ~id, y = ~n, type = "bar")
 ```
-
-
-
-
