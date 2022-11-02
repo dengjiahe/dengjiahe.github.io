@@ -4,6 +4,10 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
+    theme: readable  
 ---
-[about](about.html)
+# This is Janice's website.
+
+This is me and my favorite. His name is Kirby, a British short hair.
+![](images/me&kirby.jpg)
+You can know more [about](about.html) me from here.
