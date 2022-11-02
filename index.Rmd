@@ -6,9 +6,31 @@ output:
     toc_float: true
     theme: readable  
 ---
-<h5>Hi !</h5>
-This is me and my favorite. His name is Kirby, a British short hair.
-![](images/me&kirby.jpg)
-He just became 1 year old last month!
-![](images/kirby.jpg)
-You can know more [about](about.html) me here, not Kirby!
+<h3>Hi !</h3>
+
+<h4>My name is Jiahe Deng, you can call me Janice. 
+
+I came from ShenZhen, China. 
+You can know more [about](about.html) me here</h4>
+
+<h3>My cat, Kirby</h3>
+
+<h5>This is my favorite. His name is Kirby, a British short hair.
+
+He just became 1 year old last month!</h5>
+
+<img src = "images/kirby.jpg" style = "width:45%">
+
+<h3>My dog, Super</h3>
+
+<h5>This is also my favorite. His name is Super, a Border Collie.
+
+He already 6 years old.</h5>
+
+<img src = "images/super.jpg" style = "width:45%">
+
+<h3>My champion, Lifeline in Apex</h3>
+
+<h5>I play video game with my friend sometime, lifeline is always my first choice of champion.</h5>
+
+<img src = "images/lifeline.jpg" style = "width:45%">
