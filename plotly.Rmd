@@ -1,0 +1,60 @@
+---
+title: "plotly "
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    theme: readable
+---
+
+```{r}
+library(tidyverse)
+library(plotly)
+```
+
+```{r}
+library(p8105.datasets)
+data("ny_noaa")
+my_data = 
+  ny_noaa %>%
+  separate(date,into = c("year","month","day"),sep = "-",convert = TRUE) %>%
+  mutate(
+    tmax = as.numeric(tmax)/10,
+    tmin = as.numeric(tmin)/10,
+    text_label = str_c("Snowfall: ", snow,"mm")) %>%
+  drop_na() %>%
+  filter(snow != 0,
+         year >= 2000) %>%
+  select(id, year,snow,tmax,tmin,text_label)
+my_data
+```
+```{r}
+my_data %>%
+  plot_ly( 
+    x = ~tmin,
+    y = ~tmax,
+    color = ~snow,
+    type = "scatter",
+    mode = "markers",
+    alpha = 0.6,
+    text = ~text_label
+    )
+```
+
+```{r}
+my_data %>%
+  filter(snow %in% 0:800) %>%
+  plot_ly(
+    y = ~snow,
+    color = ~id,
+    type = "box")
+```
+```{r}
+my_data %>%
+  count(id) %>%
+  plot_ly(x = ~id, y = ~n, type = "bar")
+```
+
+
+
+
