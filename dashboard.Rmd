@@ -1,0 +1,70 @@
+---
+title: "dashboard "
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    social: menu
+    vsource_code: embed
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(p8105.datasets)
+library(tidyverse)
+library(plotly)
+data("ny_noaa")
+my_data = 
+  ny_noaa %>%
+  separate(date,into = c("year","month","day"),sep = "-",convert = TRUE) %>%
+  mutate(
+    tmax = as.numeric(tmax)/10,
+    tmin = as.numeric(tmin)/10,
+    snow = as.numeric(snow)*25.4,
+    text_label = str_c("Snowfall: ", snow,"mm")) %>%
+  drop_na() %>%
+  filter(snow != 0,
+         year == 2001) %>%
+  select(id, year,snow,tmax,tmin,text_label)
+my_data
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+Graph showing the max and min temperatures on the day when there was snow
+
+```{r,echo=FALSE}
+my_data %>%
+  plot_ly( 
+    x = ~tmin,
+    y = ~tmax,
+    color = ~snow,
+    type = "scatter",
+    mode = "markers",
+    alpha = 0.6,
+    text = ~text_label
+    )
+```
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+The graph that shows statistics of snowfall in 2001 of 6 Weather station
+
+```{r,echo=FALSE}
+my_data %>%
+  filter(snow <= 1000,
+  id %in% c("USC00300023","USC00300093","USC00300183","USC00300331","USC00300343","USC00300668")) %>%
+  plot_ly(
+    y = ~snow,
+    color = ~id,
+    type = "box")
+```
+
+The graph that shows how many snow day happened in each station in 2001
+
+```{r,echo=FALSE}
+my_data %>%
+  count(id) %>%
+  plot_ly(x = ~id, y = ~n, type = "bar")
+```
+
