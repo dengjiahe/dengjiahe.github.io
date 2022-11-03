@@ -4,10 +4,11 @@ output:
   flexdashboard::flex_dashboard:
     orientation: columns
     social: menu
-    vsource_code: embed
+    source_code: embed
 ---
 
 ```{r setup, include=FALSE}
+library(rbokeh)
 library(flexdashboard)
 library(p8105.datasets)
 library(tidyverse)
@@ -30,9 +31,26 @@ my_data
 
 Column {data-width=650}
 -----------------------------------------------------------------------
+### The graph that shows how many snow day happened in each station in 2001
+```{r,echo=FALSE}
+my_data %>%
+  count(id) %>%
+  plot_ly(x = ~id, y = ~n, type = "bar")
+```
 
-Graph showing the max and min temperatures on the day when there was snow
-
+Column {data-width=350}
+-----------------------------------------------------------------------
+### The graph that shows statistics of snowfall in 2001 of 6 Weather station
+```{r,echo=FALSE}
+my_data %>%
+  filter(snow <= 1000,
+  id %in% c("USC00300023","USC00300093","USC00300183","USC00300331","USC00300343","USC00300668")) %>%
+  plot_ly(
+    y = ~snow,
+    color = ~id,
+    type = "box")
+```
+### Graph showing the max and min temperatures on the day when there was snow in 2001
 ```{r,echo=FALSE}
 my_data %>%
   plot_ly( 
@@ -45,26 +63,3 @@ my_data %>%
     text = ~text_label
     )
 ```
-Column {data-width=350}
------------------------------------------------------------------------
-
-The graph that shows statistics of snowfall in 2001 of 6 Weather station
-
-```{r,echo=FALSE}
-my_data %>%
-  filter(snow <= 1000,
-  id %in% c("USC00300023","USC00300093","USC00300183","USC00300331","USC00300343","USC00300668")) %>%
-  plot_ly(
-    y = ~snow,
-    color = ~id,
-    type = "box")
-```
-
-The graph that shows how many snow day happened in each station in 2001
-
-```{r,echo=FALSE}
-my_data %>%
-  count(id) %>%
-  plot_ly(x = ~id, y = ~n, type = "bar")
-```
-
