@@ -21,10 +21,11 @@ my_data =
   mutate(
     tmax = as.numeric(tmax)/10,
     tmin = as.numeric(tmin)/10,
+    snow = as.numeric(snow)*25.4,
     text_label = str_c("Snowfall: ", snow,"mm")) %>%
   drop_na() %>%
   filter(snow != 0,
-         year >= 2000) %>%
+         year >= 2008) %>%
   select(id, year,snow,tmax,tmin,text_label)
 my_data
 ```
@@ -43,7 +44,8 @@ my_data %>%
 
 ```{r}
 my_data %>%
-  filter(snow %in% 0:800) %>%
+  filter(snow <= 1000,
+  id %in% c("USC00300023","	USC00301110","USC00300183","USC00300331","USC00300343","USC00301623")) %>%
   plot_ly(
     y = ~snow,
     color = ~id,
