@@ -31,6 +31,16 @@ He already 6 years old.</h5>
 
 <h3>My champion, Lifeline in Apex</h3>
 
-<h5>I play video game with my friend sometime, lifeline is always my first choice of champion.</h5>
+<h5>I play video games with my friends sometimes, lifeline is always my first choice of the champions.</h5>
 
 <img src = "images/lifeline.jpg" style = "width:45%">
+
+<h3>Dashboard Description</h3>
+
+<h4> Here is the [flexdashboard](dashboard.html)
+
+The bar graph on the left shows how many snow days occurred in 2001 and were recorded at each station. id on the x-axis is the id of the weather station and n on the y-axis represents the number of snow days in 2001. From the graph we can see which places get snow more often. 
+
+The box plot in the upper right corner, which shows the snowfall statistics for 2001 for the six weather stations I selected. We can then get more detailed information by examining the statistics shown on each box plot for each station.
+
+The scatter plot in the lower right corner shows the maximum and minimum temperatures for the day in 2001 when there was snow. From the graph we can also see the trend in temperature.
